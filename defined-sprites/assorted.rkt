@@ -85,6 +85,8 @@
 (define-sprite wartortle-sheet 1 8 1 wartortle-sprite)
 (define-sprite blastoise-sheet 1 8 1 blastoise-sprite)
 (define-sprite charmander-sheet 1 5 1 charmander-sprite)
-(define-sprite charmeleon-sheet 1 8 1 charmelon-sprite)
+(define-sprite charmeleon-sheet 1 8 1 charmeleon-sprite)
 (define-sprite charizard-sheet 1 8 1 charizard-sprite)
+
+(define-sprite pokeball2-sheet 17 8 4 pokeball-sprite)
 
