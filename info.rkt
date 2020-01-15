@@ -1,7 +1,5 @@
 #lang info
 
-(define collection "pokemon-sprites")
-
 (define deps '("https://github.com/thoughtstem/pokemon-assets.git"
                "https://github.com/thoughtstem/game-engine.git"
                "https://github.com/thoughtstem/define-assets-from.git"))
