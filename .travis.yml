@@ -30,7 +30,7 @@ before_install:
 
 install:
 - cd .. && raco pkg install --auto https://github.com/thoughtstem/pokemon-assets.git
-- raco pkg install pokemon-sprites/
+- raco pkg install --auto pokemon-sprites/
  
 before_script:
 
