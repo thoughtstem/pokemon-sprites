@@ -8,7 +8,7 @@
                               image-width))
 
 (provide pokeball2-sheet
-         #|dawnstone-sprite
+         dawnstone-sprite
          duskstone-sprite
          everstone-sprite
          firestone-sprite
@@ -17,7 +17,7 @@
          shinystone-sprite
          sunstone-sprite
          thunderstone-sprite
-         waterstone-sprite|#
+         waterstone-sprite
          )
 
 (define (make-wiggle-animation img)
@@ -25,7 +25,7 @@
           (rotate -10 img)
           img
           (rotate 10 img)))
-#|
+
 (define dawnstone-sprite
   (new-sprite (make-wiggle-animation (scale 0.5  dawnstone-img)) 5))
 
@@ -55,7 +55,7 @@
 
 (define waterstone-sprite
   (new-sprite (make-wiggle-animation (scale 0.5  waterstone-img)) 5))
-|#
+
 
 (define (easy-sprite sheet r c n)
   (sheet->sprite sheet
