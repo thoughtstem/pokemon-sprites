@@ -29,9 +29,7 @@ before_install:
 - export PATH="${RACKET_DIR}/bin:${PATH}" #install-racket.sh can't set for us
 
 install:
-- cd .. && raco pkg install --auto https://github.com/thoughtstem/pokemon-assets.git
-- raco setup pokemon-assets
-- raco pkg install --auto pokemon-sprites/
+- cd .. && raco pkg install --auto pokemon-sprites/
  
 before_script:
 
