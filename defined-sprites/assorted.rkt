@@ -8,7 +8,7 @@
                               image-width))
 
 (provide pokeball2-sheet
-         dawnstone-sprite
+         #|dawnstone-sprite
          duskstone-sprite
          everstone-sprite
          firestone-sprite
@@ -17,7 +17,7 @@
          shinystone-sprite
          sunstone-sprite
          thunderstone-sprite
-         waterstone-sprite
+         waterstone-sprite|#
          )
 
 (define (make-wiggle-animation img)
@@ -25,36 +25,37 @@
           (rotate -10 img)
           img
           (rotate 10 img)))
-
+#|
 (define dawnstone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  dawnstone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  dawnstone-img)) 5))
 
 (define duskstone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  duskstone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  duskstone-img)) 5))
 
 (define everstone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  everstone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  everstone-img)) 5))
 
 (define firestone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  firestone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  firestone-img)) 5))
 
 (define leafstone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  leafstone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  leafstone-img)) 5))
 
 (define moonstone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  moonstone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  moonstone-img)) 5))
 
 (define shinystone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  shinystone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  shinystone-img)) 5))
 
 (define sunstone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  sunstone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  sunstone-img)) 5))
 
 (define thunderstone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  thunderstone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  thunderstone-img)) 5))
 
 (define waterstone-sprite
-  (new-sprite (make-wiggle-animation (scale 0.5  waterstone)) 5))
+  (new-sprite (make-wiggle-animation (scale 0.5  waterstone-img)) 5))
+|#
 
 (define (easy-sprite sheet r c n)
   (sheet->sprite sheet
