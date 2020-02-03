@@ -3,6 +3,7 @@
 (require pokemon-assets
          (only-in game-engine sheet->sprite
                               new-sprite)
+         (only-in game-engine-rpg apply-image-function)
          (only-in 2htdp/image rotate
                               scale
                               image-width))
@@ -69,6 +70,11 @@
     (provide sprite-name)
     (define sprite-name (easy-sprite sheet r c n))))
 
+(define-syntax-rule (define-modified-sprite sheet r c n sprite-name img-func)
+  (begin
+    (provide sprite-name)
+    (define sprite-name (apply-image-function img-func (easy-sprite sheet r c n)))))
+
 
 (define-sprite armoredmewtwo-sheet 4 4 3 armoredmewtwo-sprite)
 (define-sprite pikachu-sheet 1 4 1 pikachu-sprite)
@@ -89,5 +95,5 @@
 (define-sprite charmeleon-sheet 1 8 1 charmeleon-sprite)
 (define-sprite charizard-sheet 1 8 1 charizard-sprite)
 
-(define-sprite pokeball2-sheet 17 8 4 pokeball-sprite)
+(define-modified-sprite pokeball2-sheet 17 8 4 pokeball-sprite (curry rotate 90))
 
