@@ -2,13 +2,17 @@
 
 (require pokemon-assets
          (only-in game-engine sheet->sprite
-                              new-sprite)
+                              new-sprite
+                              draw-sprite
+                              pick-frame)
          (only-in game-engine-rpg apply-image-function)
          (only-in 2htdp/image rotate
                               scale
                               image-width))
 
-(provide pokeball2-sheet
+(provide draw-sprite
+         pick-frame
+         pokeball2-sheet
          dawnstone-sprite
          duskstone-sprite
          everstone-sprite
